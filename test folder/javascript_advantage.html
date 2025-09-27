@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>مثال جاوااسکریپت</title>
+  <style>
+    #clock {
+      font-size: 24px;
+      margin-top: 20px;
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>سلام دانش‌آموزان!</h1>
+
+  <!-- دکمه تغییر رنگ پس‌زمینه -->
+  <button onclick="changeColor()">رنگ پس‌زمینه را تغییر بده</button>
+
+  <!-- دکمه نمایش پیغام ساده -->
+  <button onclick="showMessage()">نمایش پیغام</button>
+
+  <!-- محل نمایش زمان زنده -->
+  <div id="clock"></div>
+
+  <script>
+    // تابع تغییر رنگ پس‌زمینه
+    function changeColor() {
+      const colors = ["cyan", "lime", "magenta", "gold"];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.backgroundColor = randomColor;
+    }
+
+    // تابع نمایش پیغام ساده
+    function showMessage() {
+      alert("این یک پیغام ساده است!");
+    }
+
+    // تابع نمایش زمان زنده روی صفحه
+    function updateClock() {
+      const now = new Date();
+      const timeString = now.toLocaleTimeString();
+      document.getElementById("clock").textContent = "زمان فعلی: " + timeString;
+    }
+
+    // به‌روزرسانی زمان هر ثانیه
+    setInterval(updateClock, 1000);
+
+    // نمایش فوری زمان بدون انتظار یک ثانیه
+    updateClock();
+  </script>
+</body>
+</html>
