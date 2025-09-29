@@ -1,5 +1,3 @@
 <?php
-
-$x = 10;
-
-echo $x ;
+            echo " class 304 3 dar 4  " . 3*4;
+?>
