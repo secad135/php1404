@@ -83,6 +83,7 @@ EcHo "Hello World!<br>";
 - هر متنی بین این دو علامت نادیده گرفته می شوند
 
 ```php
+<?php
 /*
 The next statement will
 print a welcome message
@@ -93,6 +94,7 @@ echo "Welcome Home!";
 - به این شکل می توان یک قطعه کد را در وسط یک خط دستور تبدیل به توضیحات کرد
 
 ```php
+<?php
 $x = 5 /* + 15 */ + 5;
 echo $x;
 ```

@@ -9,6 +9,7 @@
 - به شکل زیر با استفاده از دستور `()dedine` میتوان ثابت را تعریف کرد.
 
 ```php
+<?php
 define("ESM" , "meqdar");
 
 echo ESM ;

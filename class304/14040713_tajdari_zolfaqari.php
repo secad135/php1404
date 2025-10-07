@@ -14,7 +14,7 @@ $jame = $x + $y ;
 echo $jame ;
 
 
-$f = "<br><br>"; 
+$f ="<br><br>"; 
 echo $f;
 
 $x = 10;
@@ -34,3 +34,44 @@ $x = $z = $g = 80;
 echo $x . "<br>";
 echo $z . "<br>";
 echo $g . "<br>";
+
+echo $f;
+
+$adad1 = -16;
+
+var_dump($adad1);
+
+echo $f;
+
+$adad2 = 5.66;
+var_dump($adad2);
+
+ echo $f;
+$A = true;
+var_dump($A);
+
+echo $f;
+$book = array("shah name", "ferdosi", 1200 , "khorasan");
+
+echo "<pre>";
+var_dump($book);
+echo "</pre>";
+
+echo $f;
+$p;
+// var_dump($p);
+
+echo $f;
+$color = "red";
+echo "My car is " . $color . "<br>";
+echo "My house is " . $COLOR . "<br>";
+echo "My boat is " . $coLOR . "<br>";
+
+echo $f;
+
+$abc =55;
+var_dump($abc);
+$zz=4.30;
+var_dump($zz);
+$abc = $abc * $zz;
+var_dump($abc);
