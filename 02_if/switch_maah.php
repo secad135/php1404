@@ -40,7 +40,7 @@ switch($mah){
     case 12:
         echo "اسفند";
         break;
-        default :
-    echo "error";
+    default :
+        echo "error";
 }
 
