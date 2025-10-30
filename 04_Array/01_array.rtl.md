@@ -123,4 +123,4 @@ array(3) {
 
 ---
 
-[text](/02_Indexed_array.rtl.md)
+[text](/04_Array/02_Indexed_array.rtl.md)
