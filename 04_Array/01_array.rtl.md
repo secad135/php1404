@@ -123,4 +123,4 @@ array(3) {
 
 ---
 
-[text](/04_Array/02_Indexed_array.rtl.md)
+[آرایه های اندیس دار](/04_Array/02_Indexed_array.rtl.md)
