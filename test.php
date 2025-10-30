@@ -1,5 +1,8 @@
 <?php
-
-for ($i = 1 ; $i <= 10 ; $i++){
-    echo $i . "<br>" ;
+$shomarande=1;
+for($adad=1; $shomarande<=25;$adad++){
+    if($adad%7 == 0){
+        echo "$shomarande --> $adad <br>";
+        $shomarande++;
+    }
 }
