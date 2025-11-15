@@ -1,113 +1,74 @@
 <?php
 
-// $car = array("mvm", "pride", "peykan"); // شمارشی
-
-
-
-
-// $car = ["mvm", "pride", "peykan"]; // شمارشی
-
-
-// $car = [ 1=> "mvm", "pride", "peykan", "BMW"]; // اندیس دار
-
-
-// echo "<pre>";
-// print_r($car);
-// echo "</pre>";
-
-// $car[] = "kia" ;
-
-// $car[1] = "Lexus" ;
-
-// unset($car[3]);
-
-// $car[3] = "kmc" ;
-
-// echo "<pre>";
-// print_r($car);
-// echo "</pre>";
-
-
-// انجمنی
-$daneshamoz = [
-    "esm" => "ali",
-    "family" => "karemi",
-    "nomre" => "10"
+$daneshamooz = [
+    "name" => "ali",
+    "family" => "noorani",
+    "age" => "1386"
 ];
 
-echo "<pre>";
-print_r($daneshamoz);
-echo "</pre>";
-
-$daneshamoz["code_melli"] = "0771234566";
-
-$daneshamoz["nomre"] = "15";
-
-unset($daneshamoz["nomre"]);
-
-
-echo "<pre>";
-print_r($daneshamoz);
-echo "</pre>";
-
-
-foreach($daneshamoz as $i => $x) {
-    echo $i . " vhvfghj " . $x . "<br>";
-}
+$class304 = [
+    [
+        "name" => "mahnaz",
+        "family" => "afshar",
+        "age" => "1386"
+    ],
+    [
+        "name" => "reza",
+        "family" => "mohebi",
+        "age" => "1400"
+    ],
+    [
+        "name" => "barat",
+        "family" => "shabani",
+        "age" => "1372"
+    ]
+];
 
 
+?>
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 50% ;
+            margin: 0 auto;
+        }
+        td , th {
+            border: solid 1px black;
+        }
+        th{
+            background-color: navy;
+            color: beige;
+        }
+        tr:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>family</th>
+            <th>age</th>
+        </tr>
+        <?php 
+            foreach($class304 as $b){
+                echo "<tr>" ;
+                echo "<td>" . $b["name"] . "</td>" ;
+                echo "<td>" . $b["family"] . "</td>" ;
+                echo "<td>" . $b["age"] . "</td>" ;
+                echo "</tr>" ;
+            }
 
-
-// echo "<pre>";
-// print_r($daneshamoz);
-// echo "</pre>";
-
-// $daneshamoz["nomre"] = "16";
-
-// $daneshamoz["codmli"] = "077456454345";
-
-// unset($daneshamoz["nomre"]);
-
-
-// echo "<pre>";
-// print_r($daneshamoz);
-// echo "</pre>";
-
-// foreach ($daneshamoz as $i => $x) {
-//     echo $i . " ***** " . $x . "<br>";
-// }
-
-
-// $class304 = [
-//     [
-//         "esm" => "ali",
-//         "family" => "karemi",
-//         "nomre" => "10"
-//     ],
-//     [
-//         "esm" => "reza",
-//         "family" => "rezai",
-//         "nomre" => "13"
-//     ],
-//     [
-//         "esm" => "mahnaz",
-//         "family" => "afshar",
-//         "nomre" => "18"
-//     ]
-// ];
-
-// echo $class304[2]["family"];
-
-// echo "<pre>";
-// print_r($class304);
-// echo "</pre>";
-
-// $class304[1]["codmli"]="0776565654";
-
-// unset($class304[2]["nomre"]);
-
-// echo "<pre>";
-// print_r($class304);
-// echo "</pre>";
+?>
+    </table>
+</body>
+</html>
