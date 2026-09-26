@@ -67,6 +67,26 @@ while ($i <= 1000) {
 
 ---
 
+- مثال تاس آنقدر تکرار می شود تا عدد 6 بیاید مهم نیست چند بار تکرار شود
+
+```php
+<?php
+$roll = 0;
+$c = 1;
+while ($roll != 6) {
+$roll = rand(1, 6);
+echo $c++ . ': You rolled a ' . $roll . '<br>';
+if ($roll == 6) {
+echo '<p>You win!</p>';
+}
+else {
+echo '<p>Sorry, you didn\'t win, better luck next time!</p>';
+}
+}
+```
+
+---
+
 ### ⚠️ هشدار درباره حلقه بی‌نهایت:
 
 اگر شرط حلقه همیشه درست باشد، برنامه هرگز تمام نمی‌شود و به آن **حلقه بی‌نهایت (Infinite Loop)** می‌گویند.

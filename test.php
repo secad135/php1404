@@ -1,5 +1,5 @@
 <?php
-
+echo __DIR__;
 $daneshamooz = [
     "name" => "ali",
     "family" => "noorani",
